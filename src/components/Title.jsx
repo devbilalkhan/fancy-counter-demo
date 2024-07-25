@@ -1,3 +1,8 @@
-export default function Title() {
-  return <h1 className="title">FANCY COUNTER</h1>;
+export default function Title({ message }) {
+  return (
+    <>
+      <h1 className="title">FANCY COUNTER</h1>
+      <p className="">{message}</p>
+    </>
+  );
 }
