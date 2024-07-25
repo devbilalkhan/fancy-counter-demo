@@ -9,9 +9,9 @@ export default function Card() {
   return (
     <div className="card">
       <Title />
-      <Count counter={counter} />
-      <ResetButton reset={setCounter} />
-      <CounterButtons />
+      <Count counter={counter} fn={setCounter} />
+      <ResetButton fn={setCounter} />
+      <CounterButtons counter={counter} fn={setCounter} />
     </div>
   );
 }

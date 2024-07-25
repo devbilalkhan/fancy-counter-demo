@@ -1,7 +1,9 @@
-export default function ResetButton({ setCounter }) {
+import { ResetIcon } from "@radix-ui/react-icons";
+
+export default function ResetButton({ fn }) {
   return (
-    <button className="bg-orange-400" onClick={() => setCounter(0)}>
-      ResetButton
+    <button className="reset" onClick={() => fn(0)}>
+      <ResetIcon />
     </button>
   );
 }
